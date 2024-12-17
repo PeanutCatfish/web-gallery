@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 500vh;
+    background-color: #e6e5e3;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1.5em;
+    display: flex;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
+
+.nav-col {
+    flex: 1;
+}
+
+.nav-col:nth-child(1) {
+    display: flex;
+}
+
+.nav-col:nth-child(1) p {
+    flex: 1;
+}
+
+.nav-col:nth-child(2) {
+    text-align: right;
+}
+
+p {
+    text-transform: uppercase;
+    font-family: "PP Monument Extended";
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 1.125;
+    color: #fff;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: clip;
+}
+
+.lenis.lenis-smooth iframe{
+    pointer-events: none;
+}
+
